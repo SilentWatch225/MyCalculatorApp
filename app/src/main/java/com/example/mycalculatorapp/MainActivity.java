@@ -17,19 +17,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void findSum(View view){
-        //Takes the first number entered and puts it into an editText
-        EditText number1ET = findViewById(R.id.num1ET);
-        //Takes the second number entered and puts it into an editText
-        EditText number2ET = findViewById(R.id.num2ET);
-        //Takes the textView and sets it in the java
-        TextView numberSumTV = findViewById(R.id.resultTV);
+            //Takes the first number entered and puts it into an editText
+            EditText number1ET = findViewById(R.id.num1ET);
+            //Takes the second number entered and puts it into an editText
+            EditText number2ET = findViewById(R.id.num2ET);
+            //Takes the textView and sets it in the java
+            TextView numberSumTV = findViewById(R.id.resultTV);
 
-        //Modified the numbers to accept doubles
-        double num1 = Double.parseDouble((number1ET.getText().toString()));
-        double num2 = Double.parseDouble((number2ET.getText().toString()));
-        double sum = num1 + num2;
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double sum = num1 + num2;
 
-        numberSumTV.setText("" + sum);
+            numberSumTV.setText("" + sum);
+
     }
 
     public void findSub(View view){
