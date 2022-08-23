@@ -110,11 +110,12 @@
         android:id="@+id/rootsAndExpo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="@color/dark_blue"
         android:text="roots and Expo"
         android:textColor="@color/white"
+        android:onClick="switchScreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
