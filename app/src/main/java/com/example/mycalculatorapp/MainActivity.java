@@ -49,13 +49,16 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         //Takes the textView and sets it in the java
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double sub = num1 - num2;
 
-        //Modified the numbers to accept doubles
-        double num1 = Double.parseDouble((number1ET.getText().toString()));
-        double num2 = Double.parseDouble((number2ET.getText().toString()));
-        double sub = num1 - num2;
-
-        numberSumTV.setText("" + sub);
+            numberSumTV.setText("" + sub);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter numbers inside the calculator");
+        }
     }
 
     public void findMult(View view){
@@ -65,13 +68,16 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         //Takes the textView and sets it in the java
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double mult = num1 * num2;
 
-        //Modified the numbers to accept doubles
-        double num1 = Double.parseDouble((number1ET.getText().toString()));
-        double num2 = Double.parseDouble((number2ET.getText().toString()));
-        double mult = num1 * num2;
-
-        numberSumTV.setText("" + mult);
+            numberSumTV.setText("" + mult);
+        }catch (Exception e){
+            numberSumTV.setText("Please enter numbers inside the calculator");
+        }
     }
 
     public void findDiv(View view){
@@ -81,13 +87,16 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         //Takes the textView and sets it in the java
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double div = num1 / num2;
 
-        //Modified the numbers to accept doubles
-        double num1 = Double.parseDouble((number1ET.getText().toString()));
-        double num2 = Double.parseDouble((number2ET.getText().toString()));
-        double div = num1 / num2;
-
-        numberSumTV.setText("" + div);
+            numberSumTV.setText("" + div);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter numbers inside the calculator");
+        }
     }
 
     public void findMod(View view){
@@ -97,12 +106,15 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         //Takes the textView and sets it in the java
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
+            double mod = num1 % num2;
 
-        //Modified the numbers to accept doubles
-        double num1 = Double.parseDouble((number1ET.getText().toString()));
-        double num2 = Double.parseDouble((number2ET.getText().toString()));
-        double mod = num1 % num2;
-
-        numberSumTV.setText("" + mod);
+            numberSumTV.setText("" + mod);
+        }catch (Exception e){
+            numberSumTV.setText("Please enter numbers inside the calculator");
+        }
     }
 }

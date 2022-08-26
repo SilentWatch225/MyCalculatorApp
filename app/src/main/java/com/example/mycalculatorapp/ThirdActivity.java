@@ -26,12 +26,15 @@ public class ThirdActivity extends AppCompatActivity {
         EditText expoET = findViewById(R.id.ExponentET);
 
         TextView numSumTV = findViewById(R.id.numDisTV);
+        try {
+            int base = Integer.parseInt((baseET.getText().toString()));
+            int expo = Integer.parseInt((expoET.getText().toString()));
+            double total = base ^ expo;
 
-        int base = Integer.parseInt((baseET.getText().toString()));
-        int expo = Integer.parseInt((expoET.getText().toString()));
-        double total = base ^ expo;
-
-        numSumTV.setText("" + total);
+            numSumTV.setText("" + total);
+        }catch(Exception e){
+            numSumTV.setText("Please enter numbers into the boxes");
+        }
     }
 
 }
