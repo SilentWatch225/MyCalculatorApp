@@ -37,7 +37,7 @@ public class SecondActivity extends AppCompatActivity {
             int root = Integer.parseInt(number2ET.getText().toString());
             
         }catch (Exception e){
-            numRootTV.setText("Please enter in numbers in the boxes");
+            numRootTV.setText("Please enter numbers into the boxes");
         }
     }
 }

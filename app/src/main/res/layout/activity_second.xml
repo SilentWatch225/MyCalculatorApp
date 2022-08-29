@@ -54,7 +54,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="63dp"
         android:layout_marginBottom="51dp"
-        android:text="Expo" />
+        android:text="Expo"
+        android:onClick="toExpo" />
 
     <EditText
         android:id="@+id/exponentET"
@@ -68,8 +69,7 @@
         android:layout_marginBottom="417dp"
         android:ems="10"
         android:hint="Factor"
-        android:inputType="textPersonName"
-        android:onClick="toExpo" />
+        android:inputType="textPersonName" />
 
     <ImageView
         android:id="@+id/imageView"

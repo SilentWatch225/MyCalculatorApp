@@ -17,7 +17,7 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     public void changeScreen(View view){
-        startActivity(new Intent(getApplicationContext(),SecondActivity.class));
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 
     public void calc(View view){
@@ -29,7 +29,13 @@ public class ThirdActivity extends AppCompatActivity {
         try {
             int base = Integer.parseInt((baseET.getText().toString()));
             int expo = Integer.parseInt((expoET.getText().toString()));
-            double total = base ^ expo;
+            double total = Math.pow(base, expo);
+            int count = (int)(total*1000);
+            total = (int)(total * 100);
+            if(count % 10 >= 5){
+                total += 1;
+            }
+            total = (total)/100;
 
             numSumTV.setText("" + total);
         }catch(Exception e){

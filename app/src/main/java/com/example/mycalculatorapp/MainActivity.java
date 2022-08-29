@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchScreen(View view) {
-        startActivity(new Intent(getApplicationContext(),SecondActivity.class));
+        startActivity(new Intent(getApplicationContext(),ThirdActivity.class));
     }
 
     public void findSum(View view){
@@ -111,6 +111,22 @@ public class MainActivity extends AppCompatActivity {
             double num1 = Double.parseDouble((number1ET.getText().toString()));
             double num2 = Double.parseDouble((number2ET.getText().toString()));
             double mod = num1 % num2;
+
+            numberSumTV.setText("" + mod);
+        }catch (Exception e){
+            numberSumTV.setText("Please enter numbers inside the calculator");
+        }
+    }
+
+    public void findSqrt(View view){
+        //Takes the first number entered and puts it into an editText
+        EditText number1ET = findViewById(R.id.num1ET);
+        //Takes the textView and sets it in the java
+        TextView numberSumTV = findViewById(R.id.resultTV);
+        try {
+            //Modified the numbers to accept doubles
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double mod = Math.sqrt(num1);
 
             numberSumTV.setText("" + mod);
         }catch (Exception e){
