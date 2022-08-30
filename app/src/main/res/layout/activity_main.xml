@@ -31,7 +31,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-        <!-- looked up inputType numberDecimal on stack overflow -->
+        <!-- looked up inputType numberDecimal on stack overflow https://medium.com/mobile-app-development-publication/making-android-edittext-accept-number-only-efbe2ba1cd69-->
 
     <TextView
         android:id="@+id/resultTV"
@@ -44,7 +44,7 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    <!--Looked the gravity function used in the above code up on stack overflow-->
+    <!--Looked the gravity function used in the above code up on stack overflow https://stackoverflow.com/questions/9381715/android-edit-text-alignment#:~:text=Just%20add%20android%3Agravity%3D%22,text%20to%20center%20of%20EditText.-->
 
     <Button
         android:id="@+id/addition"

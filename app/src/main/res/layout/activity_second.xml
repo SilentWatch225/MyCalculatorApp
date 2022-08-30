@@ -8,19 +8,20 @@
 
     <EditText
         android:id="@+id/bottomET"
-        android:layout_width="168dp"
-        android:layout_height="97dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="246dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="261dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="289dp"
         android:ems="10"
         android:hint="No negatives!!!"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <Button
         android:id="@+id/calc"
@@ -69,7 +70,7 @@
         android:layout_marginBottom="417dp"
         android:ems="10"
         android:hint="Factor"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -77,8 +78,9 @@
         android:layout_height="156dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="353dp"
+        android:layout_marginTop="-126dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="387dp"
         app:srcCompat="@drawable/square_root" />
 
     <TextView
